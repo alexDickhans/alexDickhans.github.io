@@ -105,3 +105,11 @@ ul {
   height: 200px;
   width: 200px;
 }
+
+.error h1{
+  font-size: 50px
+}
+
+.error p{
+  font-size: 25px
+}
