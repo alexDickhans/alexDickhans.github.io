@@ -3,7 +3,9 @@ body {
   color: #000000;
   font-family: 'Baloo Thambi 2', cursive;
   text-align: center;
- }
+  border: #000000;
+  padding: 0% 0%;
+}
 
 div img {
 padding: 2% 2%;
@@ -23,7 +25,7 @@ div {
  
 }
 
-link:visited {
+a {
  color:  rgb(29, 25, 250);
 }
 
@@ -59,10 +61,12 @@ button {
 .navbar a:hover {
   float: left;
   font-size: 16px;
-  color: rgb(209, 209, 209);
+  color: rgb(43, 43, 43);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  cursor: default;
+  background-color: #ffffff;
 }
 
 button:hover{
@@ -85,6 +89,17 @@ button:hover{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+.footer a:hover {
+  float: left;
+  font-size: 16px;
+  color: rgb(43, 43, 43);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  cursor: default;
+  background-color: #ffffff;
 }
 
 .bullet{
