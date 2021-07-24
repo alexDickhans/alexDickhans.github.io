@@ -1,10 +1,64 @@
 <DOCTYPE html>
-<html>
-  <head>
-    <title>ad101-lab</title>
-  </head>
-  <body>
-    <h1>ad101-lab Personal Site</h1>
-    <h2>Currently In Construction</h2>
-  </body>
-</html>
+  <html>
+    <head>
+      <title>ad101-lab</title>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body onload="replaceStart()">
+      <script type="text/javascript" src="script.js"></script>
+      <!-- Person alex = new Programmer(name = "Alex Dickhans")-->
+      <code class="codeHeader"
+        ><span class="removeTiny"><span class="className verbose">Person</span>
+        <span class="variable">me</span>
+        <span class="supportFuncs">=</span></span>
+        <span class="keyword">new</span></span>
+        <span class="functionName">Programmer</span>
+        <span class="noWrap">(<span class="verbose"><span class="functionParams">name</span> = </span>"<span
+          class="string"
+          >Alex Dickhans</span
+        >"<span class="x-Verbose">, <span class="functionParams">specialty</span> = "<span
+        class="string"
+        >Embedded Development</span
+      >"</span>);</span>
+      </code>
+      <!-- Image -->
+      <code>me.<span class="functionName" id="toString">toString</span>();</code>
+      <samp>
+        <span class="codeHeaderColor">"</span>Hello, I am high school student and is interested in Software
+        Development, specifically in aerospace. I've been programming since I
+        was young and it has become a passion of mine. I have a lot of
+        experience in robotics and embedded devices.<span class="codeHeaderColor">"</span>
+      </samp>
+      <code>me.<span class="functionName" id="experience">experience</span>();</code>
+      <samp>
+        <span class="codeHeaderColor">["</span>VEX IQ 2014-2019<span class="codeHeaderColor">",</span><br>
+        <span class="codeHeaderColor">"</span>VEX VRC 2019-Present<span class="codeHeaderColor">",</span><br>
+        <span class="codeHeaderColor">"</span>First Robotics Competition 2021-2022 Season<span class="codeHeaderColor">",</span><br>
+        <span class="codeHeaderColor">"</span>Took AP Computer Science A in 8th grade<span class="codeHeaderColor">"]</span>
+      </samp>
+      <code>me.<span class="functionName" id="currentProjects">currentProjects</span>();</code>
+      <samp>
+        <span class="codeHeaderColor">["</span>This Site: I made my site, although I don't
+        do much web development anymore I made an exception for this<span class="codeHeaderColor">",</span><br>
+        <span class="codeHeaderColor">"</span>Robotics: I am currently in 2 robotics teams, Longmont High VEX 
+        Team and Up-A-Creek robotics FRC team 1619<span class="codeHeaderColor">",</span>
+        <span class="codeHeaderColor">"</span>Control Systems Programming Test Bed: I am currently working on the hardware and software for
+        a control systems test bed, but it is not ready to release publicly.<span class="codeHeaderColor">"]</span>
+      </samp>
+      <!-- <code>me.<span class="functionName" id="completedProjects">completedProjects</span>();</code> -->
+      <code>me.<span class="functionName" id="contact">contact</span>();</code>
+      <samp><span class="codeHeaderColor">"</span
+        >You can contact me at my HD Projects Email <a href="mailto:alex@hdprojects.dev">alex@hdprojects.dev</a><span class="codeHeaderColor">"</span></samp>
+      <footer class="footer">
+        <div>
+          <code>me.<span class="functionName">siteInfo</span>();</code>
+          <samp class="footerOut"><span class="codeHeaderColor">"</span>&copy; <span id="year"></span> Alex Dickhans<span class="codeHeaderColor">"</span> </samp>
+          <samp class="footerOut"><span class="codeHeaderColor">"</span><a href="#contact">Contact</a><span class="codeHeaderColor">"</span></samp>
+          <samp class="footerOut"><span class="codeHeaderColor">"</span>Used Tokyo Night Storm theme from <a href="https://github.com/enkia/tokyo-night-vscode-theme">enkia's GitHub</a><span class="codeHeaderColor">"</span></samp>
+          <code><span class="keyword">delete</span> me();</code>
+        </div>
+      </footer>
+    </body>
+  </html>
+</DOCTYPE>

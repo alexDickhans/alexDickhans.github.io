@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
+/* Theme Tokyo Night Storm from enkia on github. */
+/* https://github.com/enkia/tokyo-night-vscode-theme */
+
+html,
+body {
+  margin: 0;
+  font-family: "Source Code Pro", monospace;
+}
+
+body {
+  margin: 5%;
+  margin-left: 8%;
+  margin-bottom: 3%;
+  background-color: #24283b;
+}
+
+body::before {
+  counter-reset: listing;
+}
+
+@media screen and (max-width: 999px) {
+  .verbose {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .x-Verbose {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 368px) {
+  .removeTiny {
+    display: none;
+  }
+
+  .showTiny {
+    display: block;
+  }
+}
+
+/* Medium */
+@media screen and (min-width: 1000px/* and max-width: 1200px*/) {
+  code::before {
+    counter-increment: all;
+    content: counter(listing) "|";
+    display: inline-block;
+    padding-right: 20px;
+    text-align: right;
+    margin-left: auto;
+    padding-left: auto;
+    width: 32px;
+  }
+}
+
+code {
+  color: #7dcfff;
+  counter-increment: listing;
+  padding-left: 0;
+  position: relative;
+  font-size: x-large;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: block;
+}
+
+code::after {
+  content: "\a";
+  white-space: pre;
+}
+
+.codeHeader {
+  font-size: 28px;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.lineNumbers {
+  color: #a9b1d6;
+}
+
+.noWrap {
+  white-space: nowrap;
+}
+
+a {
+  color: #b4f9f8;
+}
+
+samp {
+  color: #9ece6a;
+  font-size: large;
+  padding: 10px;
+  max-width: 1100px;
+  display: block;
+}
+
+samp::before {
+  content: "out[" counter(listing) "]: ";
+  color: #c0caf5;
+}
+
+samp::after {
+  content: "\a";
+  white-space: pre;
+}
+
+.footer {
+  width: 100%;
+}
+
+.footerOut {
+  max-width: 100% override;
+}
+
+.className {
+  color: #73daca;
+}
+
+.keyword {
+  color: #bb9af7;
+}
+
+.codeHeaderColor {
+  color: #7dcfff;
+}
+
+.functionName {
+  color: #7aa2f7;
+}
+
+.functionParams {
+  color: #e0af68;
+}
+
+.variable {
+  color: #c0caf5;
+}
+
+.supportFuncs {
+  color: #2ac3de;
+}
+
+.string {
+  color: #9ece6a;
+}
+
+.termWhite {
+  color: #c0caf5;
+}
